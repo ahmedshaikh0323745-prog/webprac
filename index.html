@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Periodic Table of Elements</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .table {
+      display: grid;
+      grid-template-columns: repeat(18, 60px);
+      gap: 4px;
+      justify-content: center;
+    }
+
+    .element {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 4px;
+      text-align: center;
+      font-size: 12px;
+      box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    }
+
+    .element small {
+      display: block;
+      font-size: 10px;
+      opacity: 0.7;
+    }
+
+    /* Colors */
+    .alkali     { background: #c8f4f9; }
+    .alkaline   { background: #b8e6f2; }
+    .transition { background: #7fc9ec; }
+    .other      { background: #f7b2d0; }
+    .nonmetal   { background: #c9f5cf; }
+    .halogen    { background: #fff89a; }
+    .inert      { background: #ffe4b5; }
+    .rare       { background: #7cc27c; color: #fff; }
+
+    /* Empty placeholder cells */
+    .empty {
+      visibility: hidden;
+    }
+
+    .footer {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      font-size: 14px;
+    }
+
+    .key {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .box {
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+      border: 1px solid #aaa;
+    }
+  </style>
+</head>
+<body>
+  <h1>Periodic Table of the Elements</h1>
+
+  <div class="table">
+    <!-- Row 1 -->
+    <div class="element nonmetal">H<small>1</small></div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="empty"></div>
+    <div class="element inert">He<small>2</small></div>
+
+    <!-- Row 2 -->
+    <div class="element alkali">Li<small>3</small></div>
+    <div class="element alkaline">Be<small>4</small></div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="element nonmetal">B<small>5</small></div>
+    <div class="element nonmetal">C<small>6</small></div>
+    <div class="element nonmetal">N<small>7</small></div>
+    <div class="element nonmetal">O<small>8</small></div>
+    <div class="element halogen">F<small>9</small></div>
+    <div class="element inert">Ne<small>10</small></div>
+
+    <!-- Row 3 -->
+    <div class="element alkali">Na<small>11</small></div>
+    <div class="element alkaline">Mg<small>12</small></div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="element other">Al<small>13</small></div>
+    <div class="element nonmetal">Si<small>14</small></div>
+    <div class="element nonmetal">P<small>15</small></div>
+    <div class="element nonmetal">S<small>16</small></div>
+    <div class="element halogen">Cl<small>17</small></div>
+    <div class="element inert">Ar<small>18</small></div>
+
+    <!-- Row 4 -->
+    <div class="element alkali">K<small>19</small></div>
+    <div class="element alkaline">Ca<small>20</small></div>
+    <div class="element transition">Sc<small>21</small></div>
+    <div class="element transition">Ti<small>22</small></div>
+    <div class="element transition">V<small>23</small></div>
+    <div class="element transition">Cr<small>24</small></div>
+    <div class="element transition">Mn<small>25</small></div>
+    <div class="element transition">Fe<small>26</small></div>
+    <div class="element transition">Co<small>27</small></div>
+    <div class="element transition">Ni<small>28</small></div>
+    <div class="element transition">Cu<small>29</small></div>
+    <div class="element transition">Zn<small>30</small></div>
+    <div class="element other">Ga<small>31</small></div>
+    <div class="element nonmetal">Ge<small>32</small></div>
+    <div class="element nonmetal">As<small>33</small></div>
+    <div class="element nonmetal">Se<small>34</small></div>
+    <div class="element halogen">Br<small>35</small></div>
+    <div class="element inert">Kr<small>36</small></div>
+
+    <!-- Similarly you can add row 5, 6, 7 and Lanthanides + Actinides manually -->
+  </div>
+
+  <div class="footer">
+    <div class="key"><div class="box alkali"></div> Alkali Metals</div>
+    <div class="key"><div class="box alkaline"></div> Alkaline Earth Metals</div>
+    <div class="key"><div class="box transition"></div> Transition Metals</div>
+    <div class="key"><div class="box other"></div> Other Metals</div>
+    <div class="key"><div class="box nonmetal"></div> Non-Metals</div>
+    <div class="key"><div class="box halogen"></div> Halogens</div>
+    <div class="key"><div class="box inert"></div> Inert Elements</div>
+    <div class="key"><div class="box rare"></div> Rare Earth Metals</div>
+  </div>
+
+</body>
+</html>
